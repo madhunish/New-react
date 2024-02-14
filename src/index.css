@@ -1,0 +1,116 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: comic sans ms;
+}
+.container{
+  position: relative;
+  height: auto;
+  width: 500px;
+  background-color: rgb(255, 227, 227);
+  border-radius: 20px;
+}
+h3{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+}
+.balance {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: white;
+}
+.income-expense-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  max-width: 350px;
+}
+.income, .exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.income .title, .exp .title{
+  font-size: 20px;
+  color: rgb(10, 20, 10);
+}
+.block {
+  width: 2px;
+  background-color: black;
+  border-radius: 10px;
+}
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  max-width: 350px;
+  flex-grow: 1;
+  
+}
+.expense-item.positive{
+  border-right: 5px solid green;
+  border-color: green;
+  
+}
+.expense-item.negative{
+  border-right: 5px solid red;
+  border-color: red; 
+}
+form{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position: relative;
+  left : 50px;
+  height: 200px;
+  width: 400px;
+}
+.input-container .title{
+  color: white;
+  font-size: 20px;
+}
+button{
+  background-color: white;
+  color: black;
+  height: 30px;
+  width: 150px;
+  border-radius: 10px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 0 0 0.75rem 0;
+}
+.expense-item-container{
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  gap: 10px;
+  margin: 1rem;
+}
+.delete {
+  padding: 0.3rem;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
